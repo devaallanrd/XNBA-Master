@@ -13,7 +13,7 @@ namespace WEBUI.Controllers
     public class HomeController : Controller
     {
 
-        //string Card;
+        string Card;
      
 
         public ActionResult Index()
@@ -40,7 +40,7 @@ namespace WEBUI.Controllers
 
             //Aqui voy al repositorio de Usuarios con el # de tarjeta leida arriba 
             //Hay que pasarlo por una interfaz
-            Usuario user = new UsuariosRepositorio().EncontrarUsuario(Card);
+            Usuario user = new UsuariosRepositorio().EncontrarUsuario("");
 
            
             ModelViewUsuario modelViewUsuario = new ModelViewUsuario(user);

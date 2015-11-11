@@ -237,7 +237,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Arduino.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Providers\Narraciones.cs" />
+    <Compile Include="Providers\NarracionesRepositorio.cs" />
     <Compile Include="Providers\EquiposRepositorio.cs" />
     <Compile Include="Providers\JugadoresRespositorio.cs" />
     <Compile Include="Providers\UsuariosRepositorio.cs" />

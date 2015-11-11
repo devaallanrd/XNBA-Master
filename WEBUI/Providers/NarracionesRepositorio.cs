@@ -6,7 +6,7 @@ using WEBUI.Models;
 
 namespace WEBUI.Providers
 {
-    public class EquiposRepositorio 
+    public class NarracionesRepositorio 
     {
         ArduinoDataContext Arduino = new ArduinoDataContext();
 
