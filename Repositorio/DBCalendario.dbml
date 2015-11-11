@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="livegame" Class="DBCalendarioDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ALLAN;Initial Catalog=livegame;Integrated Security=True" SettingsObjectName="Repositorio.Properties.Settings" SettingsPropertyName="livegameConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Calendario" Member="Calendarios">
+    <Type Name="Calendario">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="temporada" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="local" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="visita" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="pts_local" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pts_visita" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="W" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="finalizado" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Calendario_Comentario" Member="Comentarios" ThisKey="id" OtherKey="id" Type="Comentario" />
+      <Association Name="Calendario_Narracione" Member="Narraciones" ThisKey="id" OtherKey="idJuego" Type="Narracione" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comentarios" Member="Comentarios">
+    <Type Name="Comentario">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Cuerpo" Type="System.String" DbType="VarChar(31)" CanBeNull="true" />
+      <Column Name="Twitter" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Calendario_Comentario" Member="Calendario" ThisKey="id" OtherKey="id" Type="Calendario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Narraciones" Member="Narraciones">
+    <Type Name="Narracione">
+      <Column Name="idJuego" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="admin" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="VarChar(39)" CanBeNull="true" />
+      <Column Name="twitter" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Association Name="Calendario_Narracione" Member="Calendario" ThisKey="idJuego" OtherKey="id" Type="Calendario" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

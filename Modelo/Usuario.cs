@@ -9,9 +9,11 @@ namespace WEBUI.Models
     {
        
 
-        public string Code { get; set; }
-        public string Nombre { get; set; }
-        public string Vencido { get; set; }
-        public int Multas { get; set; }
+        public string nombre_usuario { get; set; }
+        public string id { get; set; }
+        public string tipo { get; set; }
+        public int contraseña { get; set; }
+        public int correo { get; set; }
+        public int nombre { get; set; }
     }
 }
