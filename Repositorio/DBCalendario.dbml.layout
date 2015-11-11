@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBCalendario">
+  <DataContextMoniker Name="/DBCalendarioDataContext" />
+  <nestedChildShapes>
+    <classShape Id="49ea9407-fda4-4bc0-99ff-e6226ac0e4bd" absoluteBounds="0.5, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DBCalendarioDataContext/Calendario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81b1b620-53dd-4e6c-9af7-05e727c80617" absoluteBounds="0.51500000000000012, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c043106-0979-4508-a774-32a059c3eec9" absoluteBounds="3.625, 2.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBCalendarioDataContext/Comentario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d33f210-e4cb-4554-8181-78cc6fd0f47c" absoluteBounds="3.6399999999999997, 2.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 3.05370198567708); (3.625 : 3.05370198567708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBCalendarioDataContext/Calendario/Calendario_Comentario" />
+      <nodes>
+        <classShapeMoniker Id="49ea9407-fda4-4bc0-99ff-e6226ac0e4bd" />
+        <classShapeMoniker Id="7c043106-0979-4508-a774-32a059c3eec9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3a3ca517-6a89-453a-a82b-c8ec37b174e9" absoluteBounds="3.375, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBCalendarioDataContext/Narracione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f4b5c65-1c8a-45c8-9a2d-f49bf2719667" absoluteBounds="3.3899999999999997, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.53929768880208); (3.375 : 1.53929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBCalendarioDataContext/Calendario/Calendario_Narracione" />
+      <nodes>
+        <classShapeMoniker Id="49ea9407-fda4-4bc0-99ff-e6226ac0e4bd" />
+        <classShapeMoniker Id="3a3ca517-6a89-453a-a82b-c8ec37b174e9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="livegame" Class="BDUsuariosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ALLAN;Initial Catalog=livegame;Integrated Security=True" SettingsObjectName="Repositorio.Properties.Settings" SettingsPropertyName="livegameConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Usuarios" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="nombre_usuario" Type="System.String" DbType="VarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="contraseña" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="correo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

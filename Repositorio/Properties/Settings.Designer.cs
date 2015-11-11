@@ -32,5 +32,15 @@ namespace Repositorio.Properties {
                 return ((string)(this["arduinoConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ALLAN;Initial Catalog=livegame;Integrated Security=True")]
+        public string livegameConnectionString {
+            get {
+                return ((string)(this["livegameConnectionString"]));
+            }
+        }
     }
 }

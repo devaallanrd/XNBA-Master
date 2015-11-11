@@ -1,0 +1,5 @@
+C:\Users\aallanrd\Documents\GitHub\XNBA-Master\Modelo\bin\Debug\Modelo.dll
+C:\Users\aallanrd\Documents\GitHub\XNBA-Master\Modelo\bin\Debug\Modelo.pdb
+C:\Users\aallanrd\Documents\GitHub\XNBA-Master\Modelo\obj\Debug\Modelo.dll
+C:\Users\aallanrd\Documents\GitHub\XNBA-Master\Modelo\obj\Debug\Modelo.pdb
+C:\Users\aallanrd\Documents\GitHub\XNBA-Master\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
